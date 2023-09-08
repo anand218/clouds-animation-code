@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Clouds animaton</title>
+    <link rel="stylesheet" href="haven-animation.css" />
+  </head>
+  <body>
+    <div class="banner">
+      <div id="text">Clouds</div>
+      <div class="clouds">
+        <img src="cloud1.png" style="--i: 1" />
+        <img src="cloud2.png" style="--i: 2" />
+        <img src="cloud3.png" style="--i: 3" />
+        <img src="cloud4.png" style="--i: 4" />
+        <img src="cloud5.png" style="--i: 5" />
+        <img src="cloud1.png" style="--i: 10" />
+        <img src="cloud2.png" style="--i: 9" />
+        <img src="cloud3.png" style="--i: 8" />
+        <img src="cloud4.png" style="--i: 7" />
+        <img src="cloud5.png" style="--i: 6" />
+      </div>
+    </div>
+    <section>
+      <h2>heaven's</h2>
+      <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nemo commodi
+        omnis quos quasi laborum, harum temporibus repellendus, quibusdam sequi
+        doloribus quidem ipsam, dignissimos eveniet nulla corrupti veritatis
+        itaque repellat earum assumenda ab. Fuga, explicabo nostrum.
+      </p>
+    </section>
+  </body>
+  <script type="text/javascript">
+    let text = document.getElementById("text");
+    window.addEventListener("scroll", function () {
+      let value = window.scrollY;
+      text.style.marginBottom = value + 6 + "px";
+    });
+  </script>
+</html>

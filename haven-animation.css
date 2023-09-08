@@ -1,0 +1,83 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-transform: capitalize;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.banner {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  background: url();
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.banner .clouds{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    pointer-events: none;
+}
+
+#text{
+    position: relative;
+    font-size: 9rem;
+    color: #fff;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.banner .clouds img{
+    position: absolute;
+    bottom: 0;
+    max-width: 100%;
+    animation: anime calc(3s * var(--i)) linear infinite;
+}
+@keyframes anime {
+    0%{
+        opacity: 0;
+        transform: scale(1);
+    }
+    25%,75%{
+        opacity: 1; 
+    }
+    100%{
+        opacity: 0;
+        transform: scale(6);
+    }
+}
+
+section{
+    position: relative;
+    font-size: 2rem;
+    padding: 75px 100px;
+    text-align: center;
+}
+
+@media screen and (max-width:900px) {
+    #text{
+        position: relative;
+        font-size: 5em;
+        transition: 1s;
+        color: #fff;
+        font-weight: 600;
+        letter-spacing: 1px;
+    }
+
+    .banner .clouds img{
+        position: absolute;
+        bottom: 0;
+        max-height: 100vh;
+        max-width: 100%;
+        animation: anime calc(3s * var(--i)) linear infinite;
+    }
+}
